@@ -33,15 +33,6 @@ app.use(
 
 //ADDING CORS
 
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (allowedOrigins.includes(origin) || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error('Origin not allowed by CORS'));
-    }
-  },
-};
 app.options('*', cors(corsOptions));
 app.use(function (req, res, next) {
   res.setHeader('Access-Control-Allow-Origin', '*');
