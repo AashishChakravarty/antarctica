@@ -59,7 +59,7 @@ var databaseConnection = require('./app/config/dbConnection').bootstrap();
 *************************************************************************************************/
 
 // SIMPLE ROUTE FOR TESTING
-app.get('/', cors(corsOptions), (req, res) => {
+app.get('/', (req, res) => {
   res.json({
     message: 'Welcome to Antarctica',
   });
