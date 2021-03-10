@@ -4,8 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // CREATE EXPRESS APP
 const app = express();
-// CORS
-const cors = require('cors');
 
 // ENV VARIABLE SETTING
 const dotenv = require('dotenv');
