@@ -7,8 +7,8 @@ const Op = sequelize.Op;
 module.exports.getUsers = async (req, res) => {
   const search = req.query.search;
   const order = req.query.order;
-  const skip = parseInt(req.query.skip) || 0;
-  const limit = parseInt(req.query.limit) || 50;
+  const skip = parseInt(req.query.skip) || null;
+  const limit = parseInt(req.query.limit) || null;
 
   var condition = {};
   var orderBy = [];
